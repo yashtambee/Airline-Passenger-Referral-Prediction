@@ -1,7 +1,10 @@
 # Airline Passenger Referral Prediction
 ![pexels-jerry-wang-3768654](https://github.com/yashtambee/Airline-Passenger-Referral-Prediction/assets/121399834/cd0a553c-0501-465b-9916-72125550507a)
+## Introduction
 
-This project focuses on predicting whether airline passengers will refer the airline to a friend or not, based on their past behavior and demographic information. The following models were used for the classification of airline recommendations as 'yes' or 'no':
+This project aims to predict whether airline passengers will refer the airline to a friend or not, based on their past behavior and demographic information. The ability to forecast passenger referrals is valuable for airlines as it helps them identify influential travelers who can contribute to higher revenue. By understanding the factors that influence passenger recommendations, airlines can focus on providing exceptional experiences and targeted marketing efforts to maximize customer satisfaction and loyalty.
+
+To achieve this prediction, several supervised machine learning models were employed for the classification task. The models used in this project are:
 
 1. Logistic Regression
 2. Decision Tree Classifier
@@ -9,19 +12,8 @@ This project focuses on predicting whether airline passengers will refer the air
 4. Support Vector Machine
 5. XG Boost Classifier
 
-To enhance the accuracy and prevent overfitting, hyperparameter tuning was performed using the GridSearchCV method for the Decision Tree, K-Nearest Neighbors, and Logistic Regression models.
+Hyperparameter tuning using the GridSearchCV method was performed for the Decision Tree, K-Nearest Neighbors, and Logistic Regression models to improve their accuracy and prevent overfitting. The models were evaluated based on classification metrics such as precision, recall, F1 score, and AUC value.
 
-The classification metrics of precision, recall, F1 score, and AUC value were given priority in evaluating the models. Among all the implemented ML models, SVM and XGBoost achieved an impressive F1 score of around 95% - 96%, making them the best performing ML models.
-
-The most influential features for the XGBoost and SVM models were found to be 'overall' and 'airline_Royal Air Maroc'. These features carried more weight compared to other features in those specific ML models.
-
-The classifier models created in this project can be utilized to forecast passenger referrals, enabling airlines to identify influential travelers who can contribute to higher revenue. Therefore, to grow and expand, it is crucial for our client to provide top-notch ratings in the following areas:
-
-- Cabin
-- Ground services
-- Food and beverage
-- Entertainment
-- Seat comfort
 
 ## Dependencies
 
@@ -52,6 +44,6 @@ To reproduce the results and analyze the models, follow these steps:
 
 ## Conclusion
 
-In conclusion, this project successfully employed supervised ML techniques to predict airline passenger referrals. SVM and XGBoost emerged as the best performing models, achieving an impressive F1 score of around 95% - 96%. By utilizing these models, airlines can identify influential travelers and focus on providing exceptional experiences in areas such as cabin, ground services, food and beverage, entertainment, and seat comfort. This will lead to increased customer satisfaction and potentially higher revenue.
+Among the implemented ML models, SVM and XGBoost exhibited the highest performance, achieving an F1 score of around 95% - 96%. These models can be effectively utilized to forecast passenger referrals and identify influential travelers. To enhance customer satisfaction and attract more referrals, airlines should focus on providing top-notch ratings in key areas such as cabin, ground services, food and beverage, entertainment, and seat comfort.
 
-It is important to note that this project serves as a proof of concept and further refinement and testing may be required before deploying the models in a production environment. Additionally, as the airline industry is dynamic, regular updates and retraining of the models may be necessary to maintain their accuracy and effectiveness.
+It is important to note that this project serves as a proof of concept, and further refinement and testing may be necessary before deploying the models in a production environment. The dynamic nature of the airline industry may require regular updates and retraining of the models to maintain their accuracy and relevance.
